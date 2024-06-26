@@ -19,9 +19,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
-        #map {
+        /* #map {
             height: 600px;
-        }
+        } */
         /* Custom pane styles */
         .covered-pane {
             z-index: 660; /* Ensure it's above the tile layer */
@@ -49,60 +49,63 @@
             </div>
             <section class="bg-center bg-cover" id="coverage">
                 <div class="w-full h-full bg-overlay overflow-hidden">
-                    <nav class="mt-2 mb-16">
-                        <div class="mx-auto max-w-[100rem] px-8 " id="navoverlay">
-                        <div class="relative flex h-16 items-center justify-between">
-                            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="menu-button">
-                                <span class="sr-only">Open main menu</span>
-                                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
+                  <nav class="mt-2 mb-16">
+                    <div class="mx-auto max-w-[100rem] px-8" id="navoverlay">
+                      <div class="relative flex h-16 items-center justify-between">
+                        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="menu-button">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="flex flex-1 items-center justify-center sm:items-center sm:justify-between">
+                          <div class="flex items-center rounded-full">
+                            <div class="flex flex-shrink-0 items-center px-8 py-2">
+                              <img class="h-6 lg:h-14 w-auto" src="./src/img/gallery/law-nobg1.png" alt="Your Company">
+                              <h1 class="text-red-900 font-medium tracking-wider text-sm sm:text-sm pl-2 playfairfont">ALABAMA LEGAL SOLUTIONS LLC.</h1>
                             </div>
-                            <div class="flex flex-1 items-center justify-center sm:items-center sm:justify-between">
-                            <div class="flex items-center rounded-full">
-                                <div class="flex flex-shrink-0 items-center px-8 py-2">
-                                    <img class="h-6 lg:h-14 w-auto" src="./src/img/gallery/law-nobg1.png" alt="Your Company">
-                                    <h1 class="text-red-900 font-medium tracking-wider text-sm sm:text-sm pl-2 playfairfont">ALABAMA LEGAL SOLUTIONS LLC.</h1>
+                          </div>
+                          <div class="hidden md:block items-center">
+                            <div class="flex items-center">
+                              <div class="sm:ml-6 hidden sm:block">
+                                <div class="flex shadow-lg shadow-cyan-300 rounded px-4 py-1 border border-gray-200 bg-rose-50 items-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-900">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                                  </svg>
+                                  <a href="./index.html" class="text-red-900 px-2 text-sm font-semibold hover-effect" aria-current="page">Go Back</a>
                                 </div>
+                              </div>
                             </div>
-                            <div class="hidden md:block items-center">
-                                <div class="flex items-center">
-                                    <div class="sm:ml-6 hidden sm:block">
-                                        <div class="flex shadow-lg shadow-cyan-300 rounded px-4 py-1 border border-gray-200 bg-rose-50 items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-900">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-                                              </svg>
-                                            <a href="./index.html" class="text-red-900 px-2 text-sm font-semibold hover-effect" aria-current="page">Go Back</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
+                          </div>
                         </div>
-                        </div>
-                        <div class="md:hidden hidden" id="mobile-menu">
-                        <div class="space-y-1 px-2 pb-3 pt-2">
-                            <a href="#home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-                        </div>
-                        </div>
-                    </nav>
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-center mx-auto container my-16">
-                        <div class="flex-1 flex items-center justify-start">
-                            <div class="">
-                                <p class="mb-2 font-normal"><span class="text-red-600 font-medium text-lg">/</span> Coverage Check  </p>
-                                <h1 class="text-5xl mb-4 font-medium">We Provide The <span class="font-black text-red-700">Widest</span><br> Coverage In Alabama</h1>
-                                <p>With the Widest Coverage of Process Services - You will never worry wherever and whenever as long <br>as its in Alabama, We can do the Job for you! </p>
-                            </div>
-                        </div>
-                        <div id="map" class="flex-1 border border-cyan-800 shadow-xl shadow-cyan-500"></div>
+                      </div>
                     </div>
+                    <div class="md:hidden hidden" id="mobile-menu">
+                      <div class="space-y-1 px-2 pb-3 pt-2">
+                        <a href="#home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="flex flex-col md:flex-row md:items-center md:justify-center mx-auto container my-16 px-4 md:px-0">
+                    <div class="flex-1 flex items-center justify-start mb-8 md:mb-0">
+                        <div class="">
+                            <p class="mb-2 font-medium text-base"><span class="text-red-600 font-medium text-xl">|</span> Coverage Check</p>
+                            <h1 class="text-3xl md:text-4xl xl:text-[4rem] xl:leading-[4.5rem] mb-4">We Provide Some Of <br><span class="font-semibold text-red-600">The Widest Coverage</span> <br>In Alabama</h1>
+                            <p class="text-sm md:text-base break-words">With the Widest Coverage of Process Services - You will never worry wherever and whenever as long as it's in Alabama, We can do the Job for you!</p>
+                        </div>
+                    </div>
+                    <div class="h-[300px] w-[90vw] sm:h-[500px] md:w-[600px] md:h-[600px]">
+                        <div id="map" class="flex-1 border border-cyan-800 shadow-xl shadow-cyan-500 h-full"></div>
+                    </div>
+                    
+                  </div>
                 </div>
-            </section>
+              </section>
         </div>    
         <footer>
 
@@ -120,7 +123,7 @@
             maxZoom: 19,
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
-
+        
         // Create custom panes
         map.createPane('coveredPane');
         map.getPane('coveredPane').classList.add('covered-pane');
