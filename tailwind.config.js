@@ -3,9 +3,9 @@ module.exports = {
   content: ["./index.html", "./coverage.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {
-      color: {
-        'dcpn': '#302f2f',
-      }
+      colors:{
+        'dcpn': '#393737',
+      },
     },
   },
   plugins: [],
