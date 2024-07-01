@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabama LS | Service Coverage</title>
+    
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="./src/img/logo/ALS-Logonobg.png">
+
+    <link href="./src/css/output-style.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+<body>
+    <main>
+        
+        <section class="bg-dcpn" id="chooseus">
+            <nav class="container mx-auto">
+                <div class="mx-auto max-w-[100rem]">
+                  <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                      <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-center sm:justify-between">
+                      <div class="flex items-center">
+                        <div class="flex flex-shrink-0 items-center">
+                            <img class="h-6 lg:h-12 w-auto" src="./src/img/gallery/law-nobg1.png" alt="Your Company">
+                            <h1 class="text-white font-light tracking-wider text-xs sm:text-sm  playfairfont">ALABAMA LEGAL SOLUTIONS LLC.</h1>
+                        </div>
+                      </div>
+                      <div class="hidden md:block items-center">
+                        <div class="flex items-center">
+                            <div class="sm:ml-6 hidden sm:block">
+                                <div class="flex space-x-2">
+                                    <a href="./index.html" class="text-white px-8 py-2 text-sm font-normal hover-effect" aria-current="page">Home</a>
+                                    <a href="./about.html" class="text-white hover:bg-[#daa637] hover:text-white px-8 py-2 text-sm font-normal hover-effect">About</a>
+                                    <a href="./pricing.html" class="text-white hover:bg-[#373fda] hover:text-white px-8 py-2 text-sm font-normal hover-effect">Services</a>
+                                    <a href="#contactsection" class="text-white hover:bg-[#daa637] hover:text-white px-8 py-2 text-sm font-normal hover-effect">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:hidden hidden" id="mobile-menu">
+                  <div class="space-y-1 px-2 pb-3 pt-2">
+                    <a href="#home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                    <a href="./about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">about</a>
+                    <a href="./pricing.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Services</a>
+                    <a href="#contactsection" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contacts Us</a>
+                  </div>
+                </div>
+            </nav>
+            <div class="container mx-auto flex justify-center w-full">
+                <div class="flex flex-col lg:flex-row justify-center items-center text-white pt-16 mb-16 w-full">
+                    <div class="w-full lg:w-1/2 px-4">
+                        <p class="text-base font-medium mb-2"><span class="text-red-600">|</span> Know More</p>
+                        <h2 class="text-3xl md:text-5xl mb-8">About us</h2>
+                        <div class="text-left font-light tracking-wide rounded-xl backdrop-blur-md" style="background-color: rgba(48, 48, 48, 0.2);">
+                            <p class="break-words mb-4">Alabama Legal Solutions was created to fill a gap in the process serving industry in Alabama. There were both large "big box" companies and small "mom and pop" companies, but not many (if any) medium sized companies that covered the entire state with actual in house process servers, most companies claim to cover statewide or nationwide but in reality just farm out their work to random contractors who may or may not have experience and training and usually aren't being paid very well.</p>
+                            <p class="break-words mb-4">Our goal at Alabama Legal Solutions is to create a comprehensive, statewide solution for service of process. By hiring our own in house servers, we can ensure they are properly trained, and pay them well over the industry standard to ensure that they can get the job done, and have the skills and motivation to get it done right. We also have access to a nationwide list of experienced process servers that we can utilize in case there is a serve in an area that we don't have an in house process server in yet.</p>
+                            <p class="break-words mb-4">Prior to becoming a process server, I worked as a Firefighter/AEMT and also spent a brief time working for Alabama Bail Enforcement and Investigations, during my time at ABEI I became highly skilled in skip tracing, using investigative techniques and utilizing open source intelligence to track people down. I discovered many different techniques to find people and was able to close out several hard cases, including locating a subject that had been on the run for multiple years from several law enforcement agencies.</p>
+                            <p class="break-words mb-2">I'm sure that you will be satisfied with our services, and I hope that you choose to work with us so we can provide you with the highest levels of service that are important to you and your company.</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-4 mt-8 lg:mt-0 flex justify-center items-end lg:justify-start bg-center bg-no-repeat bg-cover h-full" style="background-image: url('./src/img/gallery/carter1-nobg.png')">
+                        <div class="mt-4 backdrop-blur-lg border-2 border-gray-300 w-fit p-4">
+                            <p class="text-lg"><span class="text-red-600">|</span> Carter Milano</p>
+                            <p class="font-thin ">Owner and Operations Supervisor, ALS LLC.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="container mx-auto bg-white p-4 md:p-8 lg:p-12 xl:p-8">
+            <div class="flex flex-col md:flex-row justify-between">
+              <div class="flex items-center md:items-start justify-start flex-col">
+                <div class="p-4 border-2 border-red-600">
+                    <h2 class=" text-xl font-bold">ALABAMA LEGAL SOLUTIONS LLC.</h2>
+                    <p class=" font-medium text-xs">Your Trusted Legal Support Partner.</p>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <div class="flex flex-col items-start text-zinc-500">
+                      <p class="text-sm">© Copyright Alabama Legal Solutions. All rights reserved.</p>
+                      <p class="text-sm">Powered by <a href="#!" target="_blank">Example1</a></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="flex flex-row space-x-8 divide-x-2 divide-dotted">
+                <div class="px-4 break-words space-y-4 max-w-80">
+                  <h4 class="font-bold text-lg text-zinc-400">Contacts</h4>
+                  <div class="text-sm">
+                      <p>PO Box 581 Ashland, Alabama 36251</p>
+                      <p>205-419-1750</p>
+                      <p>alabamalegalsolutionsllc@gmail.com</p>
+                  </div>
+                </div>
+                <div class="px-4 break-words space-y-4 max-w-80">
+                  <h4 class="font-bold text-lg text-zinc-400">Accepted Payments</h4>
+                  <div class="flex text-sm">
+                    <div class="">
+                        <p>Check</p>
+                        <p>Discover</p>
+                        <p>American Express</p>
+                    </div>
+                    <div class="pl-4">
+                        <p>Visa/MasterCard</p>
+                        <p>Paypal</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="px-4 break-words space-y-4 max-w-80 text-wihte">
+                  <h4 class="font-bold text-lg text-zinc-400">Membership</h4>
+                  <img loading="lazy" alt="NAPPS logo" src="./public/img/logo/NAPPS.png" class="mx-auto mt-0" width="70" >
+                </div> -->
+              </div>
+            </div>
+          </footer> 
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>

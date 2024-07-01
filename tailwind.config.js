@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./coverage.html", "./src/**/*.{html,js}"],
+  content: ["./index.html", "./coverage.html", "./about.html", "./src/**/*.{html,js},", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors:{
-        'dcpn': '#393737',
+        'dcpn': '#302f2f',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+  ],
 }
 

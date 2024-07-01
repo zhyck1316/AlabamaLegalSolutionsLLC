@@ -36,7 +36,7 @@
             background-image: url('./src/img/gallery/law-nobg1.png')
         }
         #chooseus{
-            background-color: rgb(48, 47, 47);
+            background-color: #302f2f;
         }
         .hover-effect {
             transition: background-color 0.5s ease, color 0.5s ease;
@@ -97,7 +97,7 @@
                             </div>
                             <div class="flex flex-1 items-center justify-center sm:items-center sm:justify-between">
                               <div class="flex items-center">
-                                <div class="flex flex-shrink-0 items-center">
+                                <div class="flex flex-shrink-0 items-center p-2 backdrop-blur-md border-2 border-gray-200 rounded-lg sm:border-0 sm:bg-transparent">
                                     <img class="h-6 lg:h-12 w-auto" src="./src/img/gallery/law-nobg1.png" alt="Your Company">
                                     <h1 class="text-white font-light tracking-wider text-xs sm:text-sm  playfairfont">ALABAMA LEGAL SOLUTIONS LLC.</h1>
                                 </div>
@@ -106,8 +106,8 @@
                                 <div class="flex items-center">
                                     <div class="sm:ml-6 hidden sm:block">
                                         <div class="flex space-x-2">
-                                            <a href="#home" class="text-white px-8 py-2 text-sm font-normal hover-effect" aria-current="page">Home</a>
-                                            <a href="#highlightsection" class="text-white hover:bg-[#daa637] hover:text-white px-8 py-2 text-sm font-normal hover-effect">About</a>
+                                            <a href="./index.html" class="text-white px-8 py-2 text-sm font-normal hover-effect" aria-current="page">Home</a>
+                                            <a href="./about.html" class="text-white hover:bg-[#daa637] hover:text-white px-8 py-2 text-sm font-normal hover-effect">About</a>
                                             <a href="./pricing.html" class="text-white hover:bg-[#373fda] hover:text-white px-8 py-2 text-sm font-normal hover-effect">Services</a>
                                             <a href="#contactsection" class="text-white hover:bg-[#daa637] hover:text-white px-8 py-2 text-sm font-normal hover-effect">Contact Us</a>
                                         </div>
@@ -119,8 +119,8 @@
                         </div>
                         <div class="md:hidden hidden" id="mobile-menu">
                           <div class="space-y-1 px-2 pb-3 pt-2">
-                            <a href="#home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-                            <a href="#highlightsection" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">about</a>
+                            <a href="./index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                            <a href="./about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">about</a>
                             <a href="./pricing.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Services</a>
                             <a href="#contactsection" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contacts Us</a>
                           </div>
@@ -136,7 +136,7 @@
                                     <h1 class="playfairfont text-5xl font-medium text-white pb-3 text-center tracking-wider">Your Trusted Legal</h1>
                                     <h1 class="playfairfont text-5xl font-medium text-white mb-8 text-center tracking-wider">Support Partner.</h1>
                                     <a href="./pricing.html">
-                                        <button class="text-sm py-2 px-8 bg-red-900 text-white justify-center font-medium shadow-md mb-4">Lets get you Started!</button>
+                                        <button class="text-sm py-2 px-8 bg-red-900 text-white justify-center font-medium shadow-md mb-4">Place An Order Now!</button>
                                     </a>
                                     <p class="text-white">205-419-1750</p>
                                     <p class="text-white">alabamalegalsolutionsllc@gmail.com</p>
@@ -249,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col lg:flex-row justify-center text-white pt-16">
+                <!-- <div class="flex flex-col lg:flex-row justify-center text-white pt-16">
                     <div class="w-full lg:w-1/2 px-4 mb-16">
                         <p class="text-base font-medium mb-2"><span class="text-red-600">|</span> Know More</p>
                         <h2 class="text-3xl md:text-5xl mb-8">About us</h2>
@@ -267,8 +267,7 @@
                     <div class="w-full lg:w-1/2 px-4 mt-8 lg:mt-0 flex justify-center lg:justify-end">
                         <img src="./src/img/gallery/random-person1.png" alt="Random Image Of CEO" class="max-w-full h-auto">
                     </div>
-                    
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="bg-white" id="pricing">
@@ -563,11 +562,17 @@
                 </div>
                 <div class="px-4 break-words space-y-4 max-w-80 text-white">
                   <h4 class="font-bold text-lg text-zinc-400">Accepted Payments</h4>
-                  <p>Visa/MasterCard</p>
-                  <p>Discover</p>
-                  <p>American Express</p>
-                  <p>Check</p>
-                  <p>Paypal</p>
+                  <div class="flex text-sm">
+                    <div class="">
+                        <p>Check</p>
+                        <p>Discover</p>
+                        <p>American Express</p>
+                    </div>
+                    <div class="pl-4">
+                        <p>Visa/MasterCard</p>
+                        <p>Paypal</p>
+                    </div>
+                  </div>
                 </div>
                 <!-- <div class="px-4 break-words space-y-4 max-w-80 text-wihte">
                   <h4 class="font-bold text-lg text-zinc-400">Membership</h4>
