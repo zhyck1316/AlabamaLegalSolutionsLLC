@@ -1316,10 +1316,6 @@ input:checked + .toggle-bg {
   height: 90dvh;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-full {
   height: 100%;
 }
@@ -1383,10 +1379,6 @@ input:checked + .toggle-bg {
 
 .max-w-\[100rem\] {
   max-width: 100rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-1 {
@@ -2636,10 +2628,6 @@ input:checked + .toggle-bg {
 
   .lg\:justify-start {
     justify-content: flex-start;
-  }
-
-  .lg\:justify-end {
-    justify-content: flex-end;
   }
 
   .lg\:p-12 {

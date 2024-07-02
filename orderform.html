@@ -19,9 +19,120 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
+
+        <style>
+            .question-group {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            .pagination {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+            .pagination li {
+                margin: 0 5px;
+            }
+            .pagination li a {
+                text-decoration: none;
+                padding: 5px 10px;
+                background-color: #f0f0f0;
+                color: #333;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .pagination li.active a {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <main>
+            <form id="questionForm" action="submit.php" method="post">
+                <div class="question-group active" id="group1">
+                    <!-- First set of 5 questions -->
+                    <h2>Group 1</h2>
+                    <label>Question 1: <input type="text" name="question1"></label><br>
+                    <label>Question 2: <input type="text" name="question2"></label><br>
+                    <label>Question 3: <input type="text" name="question3"></label><br>
+                    <label>Question 4: <input type="text" name="question4"></label><br>
+                    <label>Question 5: <input type="text" name="question5"></label><br>
+                    <button type="button" onclick="nextGroup(1)">Proceed to Group 2</button>
+                </div>
+        
+                <div class="question-group" id="group2">
+                    <!-- Second set of 5 questions -->
+                    <h2>Group 2</h2>
+                    <label>Question 6: <input type="text" name="question6"></label><br>
+                    <label>Question 7: <input type="text" name="question7"></label><br>
+                    <label>Question 8: <input type="text" name="question8"></label><br>
+                    <label>Question 9: <input type="text" name="question9"></label><br>
+                    <label>Question 10: <input type="text" name="question10"></label><br>
+                    <button type="button" onclick="prevGroup(2)">Back to Group 1</button>
+                    <button type="button" onclick="nextGroup(2)">Proceed to Group 3</button>
+                </div>
+        
+                <div class="question-group" id="group3">
+                    <!-- Third set of 5 questions -->
+                    <h2>Group 3</h2>
+                    <label>Question 11: <input type="text" name="question11"></label><br>
+                    <label>Question 12: <input type="text" name="question12"></label><br>
+                    <label>Question 13: <input type="text" name="question13"></label><br>
+                    <label>Question 14: <input type="text" name="question14"></label><br>
+                    <label>Question 15: <input type="text" name="question15"></label><br>
+                    <button type="button" onclick="prevGroup(3)">Back to Group 2</button>
+                    <button type="button" onclick="nextGroup(3)">Proceed to Group 4</button>
+                </div>
+        
+                <div class="question-group" id="group4">
+                    <!-- Fourth set of 5 questions -->
+                    <h2>Group 4</h2>
+                    <label>Question 16: <input type="text" name="question16"></label><br>
+                    <label>Question 17: <input type="text" name="question17"></label><br>
+                    <label>Question 18: <input type="text" name="question18"></label><br>
+                    <label>Question 19: <input type="text" name="question19"></label><br>
+                    <label>Question 20: <input type="text" name="question20"></label><br>
+                    <button type="button" onclick="prevGroup(4)">Back to Group 3</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        
+            <ul class="pagination">
+                <li id="page1" class="active"><a href="#" onclick="showGroup(1)">1</a></li>
+                <li id="page2"><a href="#" onclick="showGroup(2)">2</a></li>
+                <li id="page3"><a href="#" onclick="showGroup(3)">3</a></li>
+                <li id="page4"><a href="#" onclick="showGroup(4)">4</a></li>
+            </ul>
         </main>
+
+        <script>
+            function showGroup(groupNumber) {
+                // Hide all question groups
+                document.querySelectorAll('.question-group').forEach(function(group) {
+                    group.classList.remove('active');
+                });
+    
+                // Show the selected question group
+                document.getElementById('group' + groupNumber).classList.add('active');
+    
+                // Update active state for pagination
+                document.querySelectorAll('.pagination li').forEach(function(item) {
+                    item.classList.remove('active');
+                });
+                document.getElementById('page' + groupNumber).classList.add('active');
+            }
+    
+            function nextGroup(currentGroup) {
+                showGroup(currentGroup + 1);
+            }
+    
+            function prevGroup(currentGroup) {
+                showGroup(currentGroup - 1);
+            }
+        </script>
     </body>
 </html>
