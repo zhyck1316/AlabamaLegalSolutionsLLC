@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabama LS | Service Coverage</title>
+    
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="./src/img/logo/ALS-Logonobg.png">
+
+    <link href="./src/css/output-style.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+<body>
+    <main>
+        <section class="bg-white" id="pricing">
+            <div class="relative">
+                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
+                    <img src="./src/img/bg/bg-36.png" alt="">
+                </div>
+                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/5">
+                    <img src="./src/img/bg/bg-39.png" alt="">
+                </div>
+            
+                <div class="mx-auto pt-0 pb-16 my-8 flex flex-col justify-center items-center z-20">
+                    <div class="flex flex-col justify-center text-center mb-12 mt-16">
+                        <p class="text-sm font-medium text-gray-500 mb-2 tracking-wide">ALABAMA LEGAL SOLUTIONS</p>
+                        <h1 class="text-red-600 text-5xl tracking-wide font-semibold mb-2">Flat Rate Pricing.</h1>
+                        <p class="text-sm font-normal text-gray-500">Our pricing is simple and flexible, you can easily choose the services that fit your needs.</p>
+                    </div>
+                    <div class="flex space-x-8 mb-16 justify-center z-40">
+                        <div class="shadow-xl shadow-cyan-200 rounded-xl p-4 backdrop-blur-md border border-gray-100 w-1/4" style="background-color: rgb(255, 255, 255, 0.3);">
+                            <div class="flex flex-col justify-start">
+                                <div class="mb-8">
+                                    <div class="flex items-start justify-between">
+                                        <h3 class="font-semibold text-base flex items-start">RUSH</h3>
+                                    </div>
+                                    <p class="text-sm text-gray-500">Get documents served efficiently and quickly.</p>
+                                </div>
+                                <div class="mb-8">
+                                    <h1 class="text-4xl text-red-600 font-normal">$150.00</h1>
+                                    <p class="text-sm text-gray-500">Starting at</p>
+                                </div>
+                            </div>
+                            <button class="bg-gray-200 text-red-600 mb-18 w-full py-2 rounded-full font-medium mb-20">Get Started</button>
+                            <div class="">
+                                <p class="text-sm text-gray-500 mb-2">Includes:</p>
+                                <div class="flex flex-col justify-start mt-2 leading-8 text-sm">
+                                    <div class="flex flex-row items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">Up to 4 Attempts over 3 Days.</p>                                  
+                                    </div>
+                                    <div class="flex flex-row items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">First Attempt typically made within 48hours.</p>                                  
+                                    </div>
+                                    <div class="flex flex-row items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">No Additional Mileage or Notary Charges.</p>                                  
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow-xl rounded-xl p-4 shadow-red-400 backdrop-blur-md border border-gray-100 w-1/4" style="background-color: rgb(255, 255, 255, 0.3);">
+                            <div class="flex flex-col justify-start">
+                                <div class="mb-8">
+                                    <div class="flex items-start justify-between">
+                                        <h3 class="font-semibold text-base flex items-start">Standard</h3>
+                                        <div class="bg-red-100 text-red-600 shadow-md shadow-red-400 text-[0.6rem] px-4 py-1 rounded-full font-medium">Most Popular</div>
+                                    </div>
+                                    <p class="text-sm text-gray-500">Get documents served efficiently and affordably.</p>
+                                </div>
+                                <div class="mb-8">
+                                    <h1 class="text-4xl text-red-600 font-normal">$95.00</h1>
+                                    <p class="text-sm text-gray-500">Starting at</p>
+                                </div>
+                            </div>
+                            <button class="bg-red-700 text-white mb-18 w-full py-2 rounded-full font-medium mb-20">Get Started</button>
+                            <div class="">
+                                <p class="text-sm text-gray-500 mb-2">Includes:</p>
+                                <div class="flex flex-col justify-start mt-2 leading-8 text-sm">
+                                    <div class="flex flex-row items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">Up to 4 Attempts over 10 Days.</p>                                  
+                                    </div>
+                                    <div class="flex flex-row items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">First Attempt typically made within 72hours.</p>                                  
+                                    </div>
+                                    <div class="flex flex-row items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">No Additional Mileage or Notary Charges.</p>                                  
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow-xl shadow-cyan-200 rounded-xl p-4 backdrop-blur-md border border-gray-100 w-1/4" style="background-color: rgb(255, 255, 255, 0.3);">
+                            <div class="flex flex-col justify-start">
+                                <div class="mb-8">
+                                    <h3 class="font-semibold text-base">Basic Skip Trace</h3>
+                                    <p class="text-sm text-gray-500">Let our experienced Skip Tracers locate your Subject.</p>
+                                </div>
+                                <div class="mb-8">
+                                    <h1 class="text-4xl text-red-600 font-normal">$50.00</h1>
+                                    <p class="text-sm text-gray-500">Starting at</p>
+                                </div>
+                            </div>
+                            <button class="bg-gray-200 text-red-600 mb-18 w-full py-2 rounded-full font-medium mb-20">Get Started</button>
+                            <div class="">
+                                <p class="text-sm text-gray-500 mb-2">Includes:</p>
+                                <div class="flex flex-col justify-start mt-2 leading-8 text-sm">
+                                    <div class="flex flex-row items-start">
+                                        <div class="grow pr-2 pt-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                                <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <p class=" break-words">Find new addresses, phone numbers, and other information.</p>                                  
+                                    </div>
+                                    <div class="flex flex-row items-center">
+                                        <span></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p class="">No extra charges for multiple addresses.</p>                                  
+                                    </div>
+                                    <div class="flex flex-row items-start">
+                                        <div class="grow pr-2 pt-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                                                <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <p class=" break-words">Utilizes a national database reserved for private investigations, skip tracing, and law enforcement</p>                             
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="flex justify-center">
+                        <h3 class="text-gray-600 font-medium mb-4">Other Services</h3>
+                    </div>
+                    <div class="flex space-x-8 mb-16 justify-center z-40 shadow-xl shadow-cyan-200 rounded-xl p-4 backdrop-blur-md border border-gray-100" style="background-color: rgba(255, 255, 255, 0.4)">
+                        <div class="p-4 rounded-xl">
+                          <div class="w-44">
+                            <div class="flex flex-col justify-start">
+                              <div class="mb-8">
+                                <h3 class="font-semibold text-xs">Basic Skip Trace</h3>
+                                <p class="text-xs text-gray-500">Let our experienced Skip Tracers locate your Subject.</p>
+                              </div>
+                              <div class="mb-8">
+                                <h1 class="text-xl text-red-600 font-normal">$50.00</h1>
+                                <p class="text-xs text-gray-500">Starting at</p>
+                              </div>
+                            </div>
+                            <button class="bg-gray-200 text-red-600 w-full py-2 rounded-full font-medium text-xs">Get Started</button>
+                          </div>
+                        </div>
+                        <div class="p-4 rounded-xl">
+                            <div class="w-44 flex flex-col justify-between">
+                                <div class="flex flex-col justify-start">
+                                    <div class="h-20">
+                                        <div class="flex items-start justify-between">
+                                            <h3 class="font-semibold text-xs flex items-start">Advanced Skip Trace</h3>
+                                        </div>
+                                        <p class="text-xs text-gray-500">Our Experienced Skip Tracers will attempt to locate your subject.</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="mb-8">
+                                        <h1 class="text-xl text-red-600 font-normal">Custom</h1>
+                                        <p class="text-xs text-gray-500">Contact for Pricing.</p>
+                                    </div>
+                                    <button class="bg-gray-200 text-red-600 mb-18 w-full py-2 rounded-full font-medium text-xs">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl">
+                            <div class="w-44 flex flex-col justify-between">
+                                <div class="flex flex-col justify-start">
+                                    <div class="h-20">
+                                        <h3 class="font-semibold text-xs">Mobile Notary</h3>
+                                        <p class="text-xs text-gray-500">Get legal documents notarized at your convenience.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="">
+                                    <div class="mb-8">
+                                        <h1 class="text-xl text-red-600 font-normal">$10 <span class="text-xs">/ </span><span class="text-base">signature</span></h1>
+                                        <p class="text-xs text-gray-500">+ $1 per mile</p>
+                                    </div>
+                                    <button class="bg-gray-200 text-red-600 mb-18 w-full py-2 rounded-full font-medium text-xs">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl">
+                            <div class="w-44 flex flex-col justify-start">
+                                <div class="flex flex-col justify-start">
+                                    <div class="h-20">
+                                        <h3 class="font-semibold text-xs">Stakeout Service</h3>
+                                        <p class="text-xs text-gray-500">We can perform a stakeout and serve them when they least expect it.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="">
+                                    <div class="mb-8">
+                                        <h1 class="text-xl text-red-600 font-normal">$100.00 <span class="text-xs">/ </span><span class="text-base"> hr</span></h1>
+                                        <p class="text-xs text-gray-500">4 hour minimum</p>
+                                    </div>
+                                    <button class="bg-gray-200 text-red-600 mb-18 w-full py-2 rounded-full font-medium text-xs">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
