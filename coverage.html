@@ -2338,6 +2338,7 @@
         const alabamaCountiesCoveredGeoJSON = {
             "type": "FeatureCollection",
             "features": [
+                        
                             {"type":"Feature",
                             "geometry":{
                                 "type":"Polygon",
@@ -2408,7 +2409,7 @@
             L.geoJSON(feature.geometry, {
                 pane: 'countyPane',
                 style: {
-                    color: 'blue',
+                    color: 'green',
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 0.1
@@ -2416,7 +2417,7 @@
             }).bindTooltip(countyName).addTo(map);
         });
 
-        alabamaCountiesCoveredGeoJSON.features.forEach((feature, index) => {
+        alabamaGeoJSON.features.forEach((feature, index) => {
             const countyName = feature.properties.name;
             L.geoJSON(feature.geometry, {
                 pane: 'coveredPane',
